@@ -1,0 +1,84 @@
+.secondary-events {
+  margin-bottom: var(--spacing-3xl);
+  padding: var(--spacing-xl);
+  background: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+}
+
+.secondary-header {
+  margin-bottom: var(--spacing-lg);
+}
+
+.secondary-header h3 {
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-xs);
+}
+
+.secondary-header p {
+  color: var(--text-muted);
+}
+
+.secondary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.secondary-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-md);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+}
+
+.secondary-card:hover {
+  border-color: var(--primary-color);
+  box-shadow: var(--shadow-md);
+}
+
+.secondary-content {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+  flex: 1;
+}
+
+.secondary-icon {
+  color: var(--secondary-color);
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.secondary-text h4 {
+  font-size: 1.125rem;
+  margin-bottom: 2px;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.icon-btn-forward {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: var(--spacing-xs);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.secondary-card:hover .icon-btn-forward {
+  color: var(--primary-color);
+  transform: translateX(4px);
+}

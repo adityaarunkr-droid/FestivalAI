@@ -1,0 +1,105 @@
+.photo-studio-section {
+  padding: var(--spacing-3xl) 0;
+}
+
+.photo-studio-header h2 {
+  background: linear-gradient(135deg, #a29bfe 0%, #6c5ce7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.px-xl {
+  padding-left: var(--spacing-xl);
+  padding-right: var(--spacing-xl);
+}
+
+.photo-upload-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--spacing-2xl);
+  border: 2px dashed rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+@media (prefers-color-scheme: light) {
+  .photo-upload-container {
+    border-color: var(--border-color);
+  }
+}
+
+.upload-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-3xl) var(--spacing-md);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: var(--radius-md);
+}
+
+.upload-box:hover {
+  background: rgba(108, 92, 231, 0.05);
+}
+
+.upload-box.drag-active {
+  background: rgba(108, 92, 231, 0.1);
+  border: 2px solid var(--accent-color);
+  transform: scale(1.02);
+}
+
+.upload-box:focus-visible {
+  outline: 3px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+.hidden-input {
+  display: none;
+}
+
+.progress-bar-container {
+  width: 100%;
+  max-width: 300px;
+  height: 8px;
+  background: var(--bg-color);
+  border-radius: var(--radius-full);
+  margin-top: var(--spacing-md);
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: var(--accent-color);
+  transition: width 0.2s ease;
+}
+
+.upload-icon {
+  color: var(--accent-color);
+  margin-bottom: var(--spacing-sm);
+}
+
+.spinning {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+.success {
+  color: #10b981;
+}
+
+.error {
+  color: #ef4444;
+}
+
+.mb-md {
+  margin-bottom: var(--spacing-md);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
